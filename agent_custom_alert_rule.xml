@@ -1,0 +1,17 @@
+<!-- Modify it at your will. -->
+ <group name="syslog,sshd,">
+      <rule id="105501" level="11">
+        <if_sid>5715</if_sid>       
+        <var name="agnt">ubuntu</var>
+        <location>$agnt</location>
+        <description>Server 103.174.11.37 : SSH Login Success </description>
+    <group>authentication_success,gdpr_IV_32.2,gpg13_7.1,gpg13_7.2,hipaa_164.312.b,nist_800_53_AU.14,nist_800_53_AC.7,pci_dss_10.2.5,tsc_CC6.8,tsc_CC7.2,tsc_CC7.3,</group>
+    </rule>
+
+    <rule id="105502" level="8">
+        <if_sid>5715</if_sid>  
+        <hostname negate="yes">216.48.179.47$</hostname>
+        <description>Server 216.48.179.47 : SSH Login Success </description>
+    <group>authentication_success,gdpr_IV_32.2,gpg13_7.1,gpg13_7.2,hipaa_164.312.b,nist_800_53_AU.14,nist_800_53_AC.7,pci_dss_10.2.5,tsc_CC6.8,tsc_CC7.2,tsc_CC7.3,</group>
+    </rule> 
+</group>
