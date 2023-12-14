@@ -1,0 +1,8 @@
+<crypto_method>aes</crypto_method>
+-----below--addd-----
+   <enrollment>
+      <enabled>yes</enabled>
+      <agent_name>codesec-servercake</agent_name>
+      <groups>codesec</groups>
+      <authorization_pass_path>etc/authd.pass</authorization_pass_path>
+    </enrollment>
